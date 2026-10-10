@@ -1,0 +1,9 @@
+
+/api-go/main
+/api-go/main.exe
+
+__pycache__/
+*.py[cod]
+
+.idea/
+.DS_Store

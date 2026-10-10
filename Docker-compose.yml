@@ -15,14 +15,12 @@ services:
   python-worker:
     build: ./worker-python
     ports:
-      - "8085:8000"
-    depends_on:
-      - db
+      - "8000:8000" #
 
   go-api:
     build: ./api-go
     ports:
-      - "8080:8080"
+      - "8085:8080" 
     environment:
       - DATABASE_URL=postgres://admin:password@db:5432/algonode?sslmode=disable
       - PYTHON_WORKER_URL=http://python-worker:8000

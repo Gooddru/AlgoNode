@@ -15,7 +15,7 @@ services:
   python-worker:
     build: ./worker-python
     ports:
-      - "8000:8000"
+      - "8085:8000"
     depends_on:
       - db
 

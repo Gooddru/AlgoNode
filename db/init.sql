@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS graph_cache (
+    id SERIAL PRIMARY KEY,
+    task_type VARCHAR(50) NOT NULL,
+    graph_payload JSONB NOT NULL,
+    result JSONB NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
